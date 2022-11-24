@@ -8,6 +8,7 @@ using UnityEngine;
 public class WaterManager : MonoBehaviour
 {
    private MeshFilter meshFilter;
+    public float Corriente;
 
     private void Awake()
     {
