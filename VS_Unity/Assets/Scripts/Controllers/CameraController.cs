@@ -62,12 +62,12 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
-            aiming = !aiming;
+            aiming = true;
         }
         else {
-          //  aiming = false;
+            aiming = false;
         }
 
         if (aiming)

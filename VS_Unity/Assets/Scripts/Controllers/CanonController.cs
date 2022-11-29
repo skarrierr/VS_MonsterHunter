@@ -13,10 +13,7 @@ public class CanonController : MonoBehaviour
 
     public float tiempo;
     public float CanonCooldown;
-    void Start()
-    {
-       
-    }
+    
 
     
     void Update()
@@ -34,7 +31,7 @@ public class CanonController : MonoBehaviour
             
         
         }
-        /* if (!CanShoot)
+         if (!CanShoot)
          {
              tiempo += Time.deltaTime;
              if (tiempo >= CanonCooldown)
@@ -42,15 +39,14 @@ public class CanonController : MonoBehaviour
                  tiempo = 0;
                  CanShoot = true;
              }
-         }*/
+         }
 
-        if (Input.GetKey(KeyCode.P) && CanShoot)
+        if (Input.GetKey(KeyCode.Space) && CanShoot && aiming)
         {
-            GameObject _canon = Instantiate(CanonBall, CanonSpawn.transform);
-            _canon.GetComponent<Rigidbody>().AddForce(_canon.transform.forward, ForceMode.Impulse);
-            _canon.GetComponent<Rigidbody>().AddForce(_canon.transform.up, ForceMode.Impulse);
+            GameObject _canon = Instantiate(CanonBall);
+            
 
-           // CanShoot = false;
+            CanShoot = false;
         }
     }
 }
