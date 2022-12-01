@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpawnCanon
   - Garage
+  - GameManager
   layers:
   - Default
   - TransparentFX
