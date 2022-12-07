@@ -1,8 +1,11 @@
+using Newtonsoft.Json.Bson;
+using System.Linq;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
 public class MobController : MonoBehaviour
 {
+    //Asegurar que todos que el tiempo vuelva a cero antes de cambiar de estado
    public enum MobType { NONE, ARPIA, FISH, BOSS }
    public enum BossStates { NONE, PATROL, CHASING, ATTACK, ATTACK2, ATTACK3 }
 
@@ -11,10 +14,17 @@ public class MobController : MonoBehaviour
 
     public float SpeedRotation;
     public float speed;
-    public float speed_attack;
+    public float speed_chasing;
 
+    public float Attackspeed;
     public float tiempo;
     public float timing ;
+    public float Attacktiming ;
+
+
+    public bool CanDamage = false;
+
+    public GameObject attackWarning;
 
     public GameObject target;
  
@@ -48,6 +58,7 @@ public class MobController : MonoBehaviour
                         Patroling();
                         break;
                     case BossStates.CHASING:
+                        Patroling();
                         break;
                     case BossStates.ATTACK:
                         Attacking();
@@ -59,6 +70,7 @@ public class MobController : MonoBehaviour
                     default:
                         break;
                 }
+
                 break;
             
         }
@@ -95,7 +107,42 @@ public class MobController : MonoBehaviour
 
     public void Attacking()
     {
-        var step = speed_attack * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target.transform.position,step);
+        tiempo = tiempo + Time.deltaTime;
+       
+        if (!CanDamage)
+        {
+            this.transform.LookAt(target.transform);
+            var step = speed_chasing * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+        }
+        if (tiempo > 0 && tiempo < 1)
+        {
+            this.transform.LookAt(target.transform);
+            var step = speed_chasing * Time.deltaTime;
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+        }
+        if (tiempo >= Attacktiming - 1.0f && tiempo<= Attacktiming - 2)
+        {
+            Instantiate(attackWarning);
+            CanDamage = true;
+                
+        }
+        if (tiempo >= Attacktiming-2 && tiempo<= Attacktiming - 1)
+        {
+            transform.rotation = new Quaternion(-90,transform.rotation.y, transform.rotation.z, transform.rotation.z);
+            transform.position = transform.position + transform.up * Attackspeed * Time.deltaTime;
+        }
+        if (tiempo >= Attacktiming - 1 && tiempo <= Attacktiming)
+        {
+            transform.rotation = new Quaternion(90, transform.rotation.y, transform.rotation.z, transform.rotation.z);
+            transform.position = transform.position - transform.up * Attackspeed * Time.deltaTime;
+        }
+        if (tiempo >= Attacktiming){
+            
+            CanDamage = false;
+            tiempo = 0;
+            ChangeState(BossStates.CHASING);
+        }
+
     }
 }
