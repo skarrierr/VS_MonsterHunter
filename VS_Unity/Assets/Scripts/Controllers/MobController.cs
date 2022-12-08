@@ -22,6 +22,14 @@ public class MobController : MonoBehaviour
     public float Attacktiming ;
 
 
+
+
+    private Quaternion q;
+
+
+
+
+
     public bool CanDamage = false;
 
     public GameObject attackWarning;
@@ -108,41 +116,56 @@ public class MobController : MonoBehaviour
     public void Attacking()
     {
         tiempo = tiempo + Time.deltaTime;
-       
+
         if (!CanDamage)
         {
             this.transform.LookAt(target.transform);
             var step = speed_chasing * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+            print("patroling");
         }
-        if (tiempo > 0 && tiempo < 1)
+
+        if (tiempo >= Attacktiming - 1.5f && tiempo <= Attacktiming - 1.25f)
         {
-            this.transform.LookAt(target.transform);
-            var step = speed_chasing * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
-        }
-        if (tiempo >= Attacktiming - 1.0f && tiempo<= Attacktiming - 2)
-        {
-            Instantiate(attackWarning);
+            // Instantiate(attackWarning);
+            print("spawn warning");
             CanDamage = true;
-                
+            SetDefaultPose();
         }
-        if (tiempo >= Attacktiming-2 && tiempo<= Attacktiming - 1)
+
+        if (tiempo >= Attacktiming - 1.25f && tiempo <= Attacktiming - 0.75f)
         {
-            transform.rotation = new Quaternion(-90,transform.rotation.y, transform.rotation.z, transform.rotation.z);
-            transform.position = transform.position + transform.up * Attackspeed * Time.deltaTime;
+            Vector3 v = new Vector3(270, 0, 0);
+            transform.rotation = Quaternion.Euler(v);
+            transform.position = transform.position + transform.forward * Attackspeed * Time.deltaTime;
+
         }
-        if (tiempo >= Attacktiming - 1 && tiempo <= Attacktiming)
+
+        if (tiempo >= Attacktiming - 0.75 && tiempo <= Attacktiming)
         {
-            transform.rotation = new Quaternion(90, transform.rotation.y, transform.rotation.z, transform.rotation.z);
-            transform.position = transform.position - transform.up * Attackspeed * Time.deltaTime;
+            Vector3 v = new Vector3(90, 0, 0);
+            transform.rotation = Quaternion.Euler(v);
+            transform.position = transform.position + transform.forward * Attackspeed * Time.deltaTime;
         }
-        if (tiempo >= Attacktiming){
-            
+        if (tiempo >= Attacktiming)
+        {
+
             CanDamage = false;
+            SetDefaultPose();
+
+        }
+        if (tiempo >= Attacktiming + 1)
+        {
             tiempo = 0;
             ChangeState(BossStates.CHASING);
+
         }
+    }
+        void SetDefaultPose() {
+        var step = speed_chasing * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, -1, transform.position.z), step);
+        transform.rotation = new Quaternion(0, 0, 0, 0);
+        
 
     }
 }

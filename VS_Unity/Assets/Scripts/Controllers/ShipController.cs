@@ -33,8 +33,11 @@ public class ShipController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
 
+        if (transform.position.y <= 5)
+        {
+            Move();
+        }
           
 
 
