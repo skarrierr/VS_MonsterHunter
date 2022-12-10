@@ -250,7 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4bad385e696fd74daa800d606e4d6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mobType: 1
   BossState: 0
   SpeedRotation: 0
   speed: 0
@@ -259,6 +258,7 @@ MonoBehaviour:
   tiempo: 0
   timing: 0
   Attacktiming: 0
+  warningOffset: 0
   CanDamage: 0
   attackWarning: {fileID: 0}
   target: {fileID: 0}
@@ -373,7 +373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4bad385e696fd74daa800d606e4d6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mobType: 1
   BossState: 0
   SpeedRotation: 0
   speed: 0
@@ -382,6 +381,7 @@ MonoBehaviour:
   tiempo: 0
   timing: 0
   Attacktiming: 0
+  warningOffset: 0
   CanDamage: 0
   attackWarning: {fileID: 0}
   target: {fileID: 0}
@@ -805,8 +805,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304655286}
   m_LocalRotation: {x: 0.70710677, y: -0.000012380364, z: 0.000012380364, w: 0.70710677}
-  m_LocalPosition: {x: 290.57, y: 707.46, z: 526.1}
-  m_LocalScale: {x: 12.40409, y: 12.40409, z: 12.40409}
+  m_LocalPosition: {x: 290.57, y: 390.9, z: 526.1}
+  m_LocalScale: {x: 32.751617, y: 32.751617, z: 32.751617}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 912847016}
@@ -1710,7 +1710,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4bad385e696fd74daa800d606e4d6bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mobType: 3
   BossState: 3
   SpeedRotation: 75
   speed: 7
@@ -1719,8 +1718,9 @@ MonoBehaviour:
   tiempo: 0
   timing: 5
   Attacktiming: 6
+  warningOffset: 0
   CanDamage: 0
-  attackWarning: {fileID: 12182336}
+  attackWarning: {fileID: 8629438547032348122, guid: 94f62bfc4efac6448be69d100bb99184, type: 3}
   target: {fileID: 2048929132}
 --- !u!54 &1272080428
 Rigidbody:
@@ -1767,8 +1767,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1272080426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 266.05, y: -1.7, z: 552.51685}
-  m_LocalScale: {x: 4.4725904, y: 2.6004634, z: 10.843136}
+  m_LocalPosition: {x: 266.05, y: -0.46427965, z: 553.6884}
+  m_LocalScale: {x: 6.8448524, y: 3.9797492, z: 16.594336}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1288446380}

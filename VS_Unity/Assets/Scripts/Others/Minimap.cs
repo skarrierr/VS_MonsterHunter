@@ -6,16 +6,6 @@ public class Minimap : MonoBehaviour
 {
     public Transform Player;
     public bool IsCamera = false;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void LateUpdate()
     {

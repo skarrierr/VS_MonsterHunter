@@ -6,10 +6,10 @@ using static UnityEngine.GraphicsBuffer;
 public class MobController : MonoBehaviour
 {
     //Asegurar que todos que el tiempo vuelva a cero antes de cambiar de estado
-   public enum MobType { NONE, ARPIA, FISH, BOSS }
+  
    public enum BossStates { NONE, PATROL, CHASING, ATTACK, ATTACK2, ATTACK3 }
 
-    public MobType mobType;
+    
     public BossStates BossState;
 
     public float SpeedRotation;
@@ -21,8 +21,8 @@ public class MobController : MonoBehaviour
     public float timing ;
     public float Attacktiming ;
 
-
-
+    public float warningOffset;
+    private bool hasSpawn = false;
 
     private Quaternion q;
 
@@ -45,19 +45,7 @@ public class MobController : MonoBehaviour
     void Update()
     {
 
-        switch (mobType)
-        {
-            case MobType.NONE:
-
-                break;
-            case MobType.ARPIA:
-
-                break;
-            case MobType.FISH:
-
-                break;
-
-            case MobType.BOSS:
+        
                 switch (BossState)
                 {
                     case BossStates.NONE:
@@ -79,16 +67,13 @@ public class MobController : MonoBehaviour
                         break;
                 }
 
-                break;
+        
             
         }
 
-    }
+    
 
-    private void OnTriggerEnter(Collider other)
-    {
-       
-    }
+
 
     public void ChangeState(BossStates state)
     {
@@ -125,16 +110,25 @@ public class MobController : MonoBehaviour
             print("patroling");
         }
 
-        if (tiempo >= Attacktiming - 1.5f && tiempo <= Attacktiming - 1.25f)
+        if (tiempo >= Attacktiming - 2.3f && tiempo <= Attacktiming - 1.25f)
         {
-            // Instantiate(attackWarning);
-            print("spawn warning");
+            if (!hasSpawn)
+            {
+                GameObject _warning = Instantiate(attackWarning);
+
+                _warning.transform.position = new Vector3(this.transform.position.x, warningOffset, this.transform.position.z);
+
+                Destroy(_warning, 2);
+
+                hasSpawn = true;
+            }
             CanDamage = true;
             SetDefaultPose();
         }
 
         if (tiempo >= Attacktiming - 1.25f && tiempo <= Attacktiming - 0.75f)
         {
+            hasSpawn = false;
             Vector3 v = new Vector3(270, 0, 0);
             transform.rotation = Quaternion.Euler(v);
             transform.position = transform.position + transform.forward * Attackspeed * Time.deltaTime;
@@ -149,7 +143,7 @@ public class MobController : MonoBehaviour
         }
         if (tiempo >= Attacktiming)
         {
-
+            
             CanDamage = false;
             SetDefaultPose();
 
