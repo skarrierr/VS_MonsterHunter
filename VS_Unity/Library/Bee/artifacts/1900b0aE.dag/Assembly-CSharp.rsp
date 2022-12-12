@@ -363,6 +363,7 @@
 "Assets/Scripts/Managers/WaterManager.cs"
 "Assets/Scripts/Managers/WaveManager.cs"
 "Assets/Scripts/Others/Minimap.cs"
+"Assets/Scripts/Others/MisionClass.cs"
 "Assets/Scripts/Physics/CanonBall.cs"
 "Assets/Scripts/Physics/Floater.cs"
 -langversion:9.0

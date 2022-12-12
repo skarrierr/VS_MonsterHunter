@@ -24,11 +24,16 @@ public class CameraController : MonoBehaviour
     private float cameraLerp;
 
     
-
+    public GameManager manager;
     
 
     public float offsetX;
     public float offsetY;
+
+    private void Start()
+    {
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
 
     private void LateUpdate()
     {
@@ -36,7 +41,7 @@ public class CameraController : MonoBehaviour
             rotationY += Input.GetAxis("Mouse X");
             rotationX = Mathf.Clamp(rotationX, -50f, 50f);
             transform.eulerAngles = new Vector3(rotationX, rotationY, 0);
-
+            
 
             actualtargetDistance += Input.mouseScrollDelta.x;
             actualtargetDistance -= Input.mouseScrollDelta.y;
@@ -49,6 +54,7 @@ public class CameraController : MonoBehaviour
             if (Physics.Linecast(actualtarget.transform.position, finalposition, out hit))
             {
                 finalposition = hit.point;
+           
             }
 
 
@@ -62,9 +68,11 @@ public class CameraController : MonoBehaviour
     }
     private void Update()
     {
+       
         if (Input.GetKey(KeyCode.Mouse1))
         {
             aiming = true;
+            
         }
         else {
             aiming = false;
@@ -74,7 +82,7 @@ public class CameraController : MonoBehaviour
         {
             actualtarget = canontarget;
             actualtargetDistance = CanontargetDistance;
-
+            manager.CompleteQuest(0, 2);
         }
         else
         {

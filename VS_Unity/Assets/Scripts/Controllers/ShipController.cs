@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShipController : MonoBehaviour
 {
     public Rigidbody rb;
+    public GameManager manager;
     public float SpeedRotation;
     public float speed;
     public float Maxspeed;
@@ -19,6 +20,7 @@ public class ShipController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
      
     }
 
@@ -26,7 +28,7 @@ public class ShipController : MonoBehaviour
     void Update()
     {
 
-        Mov = Input.GetAxis("Vertical");
+        Rotate();
 
 
     }
@@ -74,7 +76,20 @@ public class ShipController : MonoBehaviour
                 Vector3 direction = rb.velocity.normalized;
                 rb.velocity = Maxspeed * direction;
             }
+
+            manager.CompleteQuest(0,0);
         }
         transform.Rotate(Vector3.up * SpeedRotation * Input.GetAxis("Horizontal") * Time.deltaTime);
     }
+
+    public void Rotate()
+    {
+        Mov = Input.GetAxis("Vertical");
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            manager.CompleteQuest(0, 1);
+        }
+        
+    }
+    
 }

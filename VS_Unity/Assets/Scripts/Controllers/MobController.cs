@@ -22,11 +22,12 @@ public class MobController : MonoBehaviour
     public float Attacktiming ;
 
     public float warningOffset;
+    public float attackOffset;
     private bool hasSpawn = false;
 
     private Quaternion q;
 
-
+  
 
 
 
@@ -54,7 +55,7 @@ public class MobController : MonoBehaviour
                         Patroling();
                         break;
                     case BossStates.CHASING:
-                        Patroling();
+                        Chasing();
                         break;
                     case BossStates.ATTACK:
                         Attacking();
@@ -104,10 +105,9 @@ public class MobController : MonoBehaviour
 
         if (!CanDamage)
         {
-            this.transform.LookAt(target.transform);
+           this.transform.LookAt(new Vector3 (target.transform.position.x, attackOffset, target.transform.position.z));
             var step = speed_chasing * Time.deltaTime;
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
-            print("patroling");
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(target.transform.position.x, attackOffset, target.transform.position.z), step);
         }
 
         if (tiempo >= Attacktiming - 2.3f && tiempo <= Attacktiming - 1.25f)
@@ -123,7 +123,7 @@ public class MobController : MonoBehaviour
                 hasSpawn = true;
             }
             CanDamage = true;
-            SetDefaultPose();
+            
         }
 
         if (tiempo >= Attacktiming - 1.25f && tiempo <= Attacktiming - 0.75f)
@@ -151,15 +151,26 @@ public class MobController : MonoBehaviour
         if (tiempo >= Attacktiming + 1)
         {
             tiempo = 0;
+            SetDefaultPose();
             ChangeState(BossStates.CHASING);
 
         }
     }
         void SetDefaultPose() {
         var step = speed_chasing * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, -1, transform.position.z), step);
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(transform.position.x, 0, transform.position.z), step);
         transform.rotation = new Quaternion(0, 0, 0, 0);
-        
 
-    }
+        }
+        
+        void Chasing()
+        {
+            this.transform.LookAt(target.transform);
+
+            var step = (speed_chasing -7) * Time.deltaTime;
+
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+
+        }
+
 }

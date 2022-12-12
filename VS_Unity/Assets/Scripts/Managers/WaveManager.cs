@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class WaveManager : MonoBehaviour
     public float length = 2f;
     public float offset  = 0f;
 
+    
 
     private void Awake()
     {
@@ -29,7 +31,7 @@ public class WaveManager : MonoBehaviour
     private void Update()
     {
         offset += Time.deltaTime * speed;
-
+       
     }
 
     public float GetWaveHeigth(float _x)

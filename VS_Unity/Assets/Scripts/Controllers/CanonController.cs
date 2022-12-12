@@ -13,23 +13,21 @@ public class CanonController : MonoBehaviour
 
     public float tiempo;
     public float CanonCooldown;
-    
 
-    
+    public GameManager manager;
+
+    private void Start()
+    {
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+    }
     void Update()
     {
-
-        
-
         aiming = Camera.GetComponent<CameraController>().aiming;
 
         if (aiming)
         {
             this.transform.rotation = Camera.transform.rotation;
 
-
-            
-        
         }
          if (!CanShoot)
          {
@@ -44,7 +42,8 @@ public class CanonController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && CanShoot && aiming)
         {
             GameObject _canon = Instantiate(CanonBall);
-            
+
+            manager.CompleteQuest(0, 3);
 
             CanShoot = false;
         }
