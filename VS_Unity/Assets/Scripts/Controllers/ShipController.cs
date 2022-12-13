@@ -40,22 +40,15 @@ public class ShipController : MonoBehaviour
         {
             Move();
         }
-          
 
 
+        rb.AddForce(manager.viento * Time.fixedDeltaTime, ForceMode.Force) ; 
         
       
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Garage")
-        {
-            if (Input.GetKeyDown(KeyCode.E)) { IsInGarage = !IsInGarage; }
-           
-        }
-    }
+   
      
 
 
@@ -73,8 +66,8 @@ public class ShipController : MonoBehaviour
             rb.AddForce(transform.TransformDirection(new Vector3(0, 0, corriente * Time.fixedDeltaTime)), ForceMode.Force);
             if (rb.velocity.magnitude >= Maxspeed)
             {
-                Vector3 direction = rb.velocity.normalized;
-                rb.velocity = Maxspeed * direction;
+               Vector3 direction = rb.velocity.normalized;
+               //rb.velocity = Maxspeed * direction;
             }
 
             manager.CompleteQuest(0,0);

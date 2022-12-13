@@ -9,6 +9,15 @@ public class GameManager : MonoBehaviour
     public float HealthCasco;
     public float HealthVela;
 
+    public Vector3 viento;
+
+    public float bulletDamage;
+
+
+
+    public List<int> Inventory;
+
+
     //UI
     public GameObject misionPanel;
 

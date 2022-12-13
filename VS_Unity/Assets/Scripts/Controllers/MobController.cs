@@ -39,7 +39,7 @@ public class MobController : MonoBehaviour
  
     void Start()
     {
-        
+        target = GameObject.FindGameObjectWithTag("Player");
     }
 
     

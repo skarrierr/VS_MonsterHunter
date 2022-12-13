@@ -22,6 +22,7 @@ public class MisionClass : MonoBehaviour
         
         public string Descripción;
 
+        public int Numquest;
 
         public int RewardID;
     }
