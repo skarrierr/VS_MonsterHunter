@@ -9,6 +9,8 @@ TagManager:
   - GameManager
   - Market
   - Bullet
+  - Boss
+  - BossSpawn
   layers:
   - Default
   - TransparentFX

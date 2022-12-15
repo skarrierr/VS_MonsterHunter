@@ -65,11 +65,15 @@ public class Market : MonoBehaviour
     {
         int tempNeedCarne = NeedCarne;
         int tempNeedSangre = NeedSangre;
+
+        List<int> tempInventory = manager.Inventory;
+
+
         if (NumCarneInventory >= NeedCarne && NumSangreInventory >= NeedSangre)
         {
             manager.Inventory.Add(3);
             
-            for (int i = 0; i < manager.Inventory.Count; i++)
+            for (int i = 0; i < tempInventory.Count; i++)
             {
                 if (manager.Inventory[i] == 1 && tempNeedCarne > 0)
                 {

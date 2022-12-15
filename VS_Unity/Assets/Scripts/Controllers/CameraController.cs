@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour
     private GameObject actualtarget;
     public GameObject target;
     public GameObject canontarget;
+    public GameObject mirilla;
     [SerializeField]
     private float cameraLerp;
 
@@ -72,17 +73,19 @@ public class CameraController : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse1))
         {
             aiming = true;
-            
+            mirilla.SetActive(true);
         }
         else {
             aiming = false;
+            mirilla.SetActive(false);
+
         }
 
         if (aiming)
         {
             actualtarget = canontarget;
             actualtargetDistance = CanontargetDistance;
-            manager.CompleteQuest(0, 2);
+           
         }
         else
         {

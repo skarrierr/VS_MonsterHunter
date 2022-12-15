@@ -42,9 +42,10 @@ public class MisionClass : MonoBehaviour
             
             
             RewardID = 0,
+            Numquest = 4
             
         },
-         new MisionProperties()
+            new MisionProperties()
         {
             MisionID = 1,
             MisionTitle = "Preparación para la Caza",
@@ -56,6 +57,7 @@ public class MisionClass : MonoBehaviour
             Quest5 = new QuestProperties() {Text = "-" },
 
             RewardID = 0,
+            Numquest = 4
         },
           new MisionProperties()
         {
@@ -69,7 +71,7 @@ public class MisionClass : MonoBehaviour
             Quest5 = new QuestProperties() {Text = "-"},
 
             RewardID = 0,
-
+            Numquest = 4
         },
     };
 

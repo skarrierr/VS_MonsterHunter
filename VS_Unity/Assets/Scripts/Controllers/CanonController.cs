@@ -10,6 +10,7 @@ public class CanonController : MonoBehaviour
     public bool CanShoot;
     public GameObject CanonBall;
     public GameObject CanonSpawn;
+    public GameObject mirilla;
 
     public float tiempo;
     public float CanonCooldown;
@@ -37,13 +38,14 @@ public class CanonController : MonoBehaviour
                  tiempo = 0;
                  CanShoot = true;
              }
+
          }
 
         if (Input.GetKey(KeyCode.Space) && CanShoot && aiming)
         {
             GameObject _canon = Instantiate(CanonBall);
 
-            manager.CompleteQuest(0, 3);
+            
 
             CanShoot = false;
         }

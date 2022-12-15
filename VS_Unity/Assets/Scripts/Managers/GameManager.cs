@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public float bulletDamage;
 
-
+    public int NumMisiones;
 
     public List<int> Inventory;
 
@@ -61,24 +62,30 @@ public class GameManager : MonoBehaviour
    
     void Update()
     {
-        if (QuestCheck[4] == true)
-        {
-            CompleteMision();
-           
-        }
+        
         UpdateMisionUI();
 
-       
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            CompleteQuest();
+           
+        }
+        if (QuestCheck[4] == true)
+        {
+            CompleteMision(MisionID);
+        }
     }
 
     public void SetMisionUI(int _id)
-    {   
+    {
+        _id++;
         MisionTitle.text = MisionClass.GetMision(_id).MisionTitle;
         Quest1.text = MisionClass.GetMision(_id).Quest1.Text;
         Quest2.text = MisionClass.GetMision(_id).Quest2.Text;
         Quest3.text = MisionClass.GetMision(_id).Quest3.Text;
         Quest4.text = MisionClass.GetMision(_id).Quest4.Text;
         Quest5.text = MisionClass.GetMision(_id).Quest5.Text;
+        NumMisiones = MisionClass.GetMision(_id).Numquest;
         MisionID = _id;
 
         for (int i = 0; i < QuestCheck.Count; i++)
@@ -110,7 +117,7 @@ public class GameManager : MonoBehaviour
         {
             if (ActualQuest.text.Contains("-"))
             {
-                CompleteQuest(i, i);
+              
             }
             
         }
@@ -121,22 +128,30 @@ public class GameManager : MonoBehaviour
        
     }
 
-    public void CompleteQuest(int _misionid, int _questid)
+    public void CompleteQuest()
     {
-
+       
+            for (int i = 0; i < QuestCheck.Count; i++)
+            {
+                if (QuestCheck[i] == false)
+                {
+                    QuestCheck[i] = true;
+                    return;
+                }
+            }
+        
+        /*
         if (MisionID == _misionid && QuestCheck[_questid] == false)
         {
             QuestCheck[_questid] = true;
-        }
-       // UpdateMisionUI(); 
+        };
+       */
     }
-    public void CompleteMision()
+    public void CompleteMision(int _questid)
     {
-        MisionID++;
-        for (int i = 0; i < QuestCheck.Count; i++)
-        {
-            QuestCheck[i] = false;
-        }
-        SetMisionUI(MisionID);
+
+        SetMisionUI(MisionID) ;
+
+
     }
 }

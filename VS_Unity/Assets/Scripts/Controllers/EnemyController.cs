@@ -24,6 +24,7 @@ public class EnemyController : MonoBehaviour
     public Collider NormalCollider;
 
     public GameObject LootParticles;
+    public GameObject Floater;
 
     public bool Islooting;
 
@@ -95,7 +96,7 @@ public class EnemyController : MonoBehaviour
         if (tiempo >= timing - 2)
         {
 
-            transform.Rotate(Vector3.up * SpeedRotation * Random.Range(-1, 1) * Time.deltaTime);
+            transform.Rotate(new Vector3(0, SpeedRotation * Random.Range(-1, 1) * Time.deltaTime,0) );
             if (tiempo >= timing)
             {
                 tiempo = 0;
@@ -115,11 +116,12 @@ public class EnemyController : MonoBehaviour
             Life = Life - manager.bulletDamage;
             if (Life <= 0)
             {
-                    
+                State = EnemyState.NONE;
                 NormalCollider.enabled = false;
                 LootCollider.enabled = true;
-                this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                Floater.SetActive(true);
                 LootParticles.SetActive(true);
+                //transform.GetChild(1).transform.Rotate(new Vector3(0,0,90));
             }
         }
         

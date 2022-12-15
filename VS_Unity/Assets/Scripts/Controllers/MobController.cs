@@ -1,20 +1,28 @@
 using Newtonsoft.Json.Bson;
 using System.Linq;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+using UnityEngine.UI;
+
+
 
 public class MobController : MonoBehaviour
 {
     //Asegurar que todos que el tiempo vuelva a cero antes de cambiar de estado
   
-   public enum BossStates { NONE, PATROL, CHASING, ATTACK, ATTACK2, ATTACK3 }
+   public enum BossStates { NONE, PATROL, CHASING, ATTACK, ATTACK2, DIE }
 
     
     public BossStates BossState;
 
+    private GameManager manager;
+
+    public float Life;
+
     public float SpeedRotation;
     public float speed;
     public float speed_chasing;
+
+
 
     public float Attackspeed;
     public float tiempo;
@@ -27,8 +35,12 @@ public class MobController : MonoBehaviour
 
     private Quaternion q;
 
-  
 
+    public GameObject LifeBar;
+    public GameObject Floater;
+    public GameObject LootParticles;
+    public Collider LootCollider;
+    public Collider NormalCollider;
 
 
     public bool CanDamage = false;
@@ -40,6 +52,7 @@ public class MobController : MonoBehaviour
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
+        manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 
     
@@ -62,10 +75,10 @@ public class MobController : MonoBehaviour
                         break;
                     case BossStates.ATTACK2:
                         break;
-                    case BossStates.ATTACK3:
+                    case BossStates.DIE:
+                        IsDead();
                         break;
-                    default:
-                        break;
+                   
                 }
 
         
@@ -93,9 +106,15 @@ public class MobController : MonoBehaviour
                 tiempo = 0;
             }
         }
+        if (Vector3.Distance(transform.position, target.transform.position) >= 10f)
+        {
+
+            ChangeState(BossStates.CHASING);
+            LifeBar.SetActive(true);
+        }
 
 
-        
+
         transform.position = transform.position + transform.forward * speed * Time.deltaTime;
     }
 
@@ -173,4 +192,31 @@ public class MobController : MonoBehaviour
 
         }
 
+
+        void IsDead()
+        {
+            NormalCollider.enabled = false;
+            LootCollider.enabled = true;
+            Floater.SetActive(true);
+            LootParticles.SetActive(true);
+        }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Bullet")
+        {
+            Life = Life - manager.bulletDamage;
+            if(Life <= 0)
+            {
+                ChangeState(BossStates.DIE);
+            }
+        }
+        if (other.gameObject.tag == "Player")
+        {
+           
+            {
+                ChangeState(BossStates.ATTACK);
+            }
+        }
+    }
 }

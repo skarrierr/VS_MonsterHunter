@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShipController : MonoBehaviour
 {
@@ -9,49 +10,61 @@ public class ShipController : MonoBehaviour
     public float SpeedRotation;
     public float speed;
     public float Maxspeed;
+    public float Damage;
     float Mov;
-    
-
+    public GameObject DieText;
+    public GameObject mirilla;
+    public float ImpactForce;
     public float corriente;
-
+    
     public bool IsInGarage = false;
 
-
+    public GameObject Floater1;
+    public GameObject Floater2;
+    public GameObject Floater3;
+    public GameObject Floater4; 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-     
+       
     }
 
-    
+
     void Update()
     {
-
-        Rotate();
-
-
-    }
-
-    private void FixedUpdate()
-    {
-
-        if (transform.position.y <= 5)
+        Cursor.lockState = CursorLockMode.Locked;
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            Move();
+            CambiarEscena(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+        Rotate();
+        
+        {
+
+            if (transform.position.y <= 5 && transform.position.y >= -5)
+            {
+                Move();
+
+            }
+            else
+            {
+                DieText.SetActive(true);
+            }
+
+
+            rb.AddForce(manager.viento * Time.fixedDeltaTime, ForceMode.Force);
+
         }
 
 
-        rb.AddForce(manager.viento * Time.fixedDeltaTime, ForceMode.Force) ; 
-        
-      
-
     }
 
-   
-     
-
-
+        
     public void Garage(){
         
 
@@ -70,7 +83,6 @@ public class ShipController : MonoBehaviour
                //rb.velocity = Maxspeed * direction;
             }
 
-            manager.CompleteQuest(0,0);
         }
         transform.Rotate(Vector3.up * SpeedRotation * Input.GetAxis("Horizontal") * Time.deltaTime);
     }
@@ -80,9 +92,31 @@ public class ShipController : MonoBehaviour
         Mov = Input.GetAxis("Vertical");
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
         {
-            manager.CompleteQuest(0, 1);
+           
         }
         
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Boss")
+        {
+
+            manager.HealthCasco = manager.HealthCasco - Damage;
+            rb.AddForce(new Vector3(0,0,-1 * ImpactForce), ForceMode.Force);
+            if (manager.HealthCasco <= 0)
+            {
+                Floater1.SetActive(false);
+                Floater2.SetActive(false);
+                Floater3.SetActive(false);
+                Floater4.SetActive(false);
+                DieText.SetActive(true);
+            }
+        }
+    }
+
+    public void CambiarEscena(int _id)
+    {
+        SceneManager.LoadScene(_id);
+    }
 }
