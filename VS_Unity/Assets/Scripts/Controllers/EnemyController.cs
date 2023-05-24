@@ -102,9 +102,6 @@ public class EnemyController : MonoBehaviour
                 tiempo = 0;
             }
         }
-
-
-
         transform.position = transform.position + transform.forward * speed * Time.deltaTime;
     }
     private void OnTriggerEnter(Collider other)
@@ -113,6 +110,7 @@ public class EnemyController : MonoBehaviour
         if(other.tag == "Bullet")
         {
             Destroy(other.gameObject);
+
             Life = Life - manager.bulletDamage;
             if (Life <= 0)
             {
@@ -124,7 +122,20 @@ public class EnemyController : MonoBehaviour
                 //transform.GetChild(1).transform.Rotate(new Vector3(0,0,90));
             }
         }
-        
+        if (other.tag == "arrow")
+        {
+            Destroy(other.gameObject);
+            Life -= manager.bulletDamage-9;
+            if (Life <= 0)
+            {
+                State = EnemyState.NONE;
+                NormalCollider.enabled = false;
+                LootCollider.enabled = true;
+                Floater.SetActive(true);
+                LootParticles.SetActive(true);
+                //transform.GetChild(1).transform.Rotate(new Vector3(0,0,90));
+            }
+        }
     }
     private void OnTriggerStay(Collider other) {
         if (other.gameObject.tag == "Player")

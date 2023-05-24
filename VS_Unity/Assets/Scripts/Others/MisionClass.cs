@@ -7,6 +7,7 @@ public class MisionClass : MonoBehaviour
     public class QuestProperties
     {
         public string Text;
+        public bool skip = false;
         
     }
     public class MisionProperties
@@ -37,7 +38,7 @@ public class MisionClass : MonoBehaviour
             Quest2 = new QuestProperties() {Text = "Usa A o D para rotar" },
             Quest3 = new QuestProperties() {Text = "Usa Clic derecho para apuntar" },
             Quest4 = new QuestProperties() {Text = "Usa espacio mientras apuntas para disparar" },
-            Quest5 = new QuestProperties() {Text = "-" },
+            Quest5 = new QuestProperties() {Text = "-" , skip = true},
 
             
             
@@ -53,11 +54,11 @@ public class MisionClass : MonoBehaviour
             Quest1 = new QuestProperties() {Text = "Consigue 3 carne de pescado" },
             Quest2 = new QuestProperties() {Text = "Consigue 1 sangre de arpía" },
             Quest3 = new QuestProperties() {Text = "Craftea un cebo en el mercado" },
-            Quest4 = new QuestProperties() {Text = "Compra la mejora Velas en el taller" },
-            Quest5 = new QuestProperties() {Text = "-" },
+            Quest4 = new QuestProperties() {Text = "-", skip = true },
+            Quest5 = new QuestProperties() {Text = "-", skip = true },
 
             RewardID = 0,
-            Numquest = 4
+            Numquest = 3
         },
           new MisionProperties()
         {
@@ -66,12 +67,12 @@ public class MisionClass : MonoBehaviour
 
             Quest1 = new QuestProperties() {Text = "Usa el cebo en el hábitat de La Barrakurnuda" },
             Quest2 = new QuestProperties() {Text = "Acaba con La Barrakurnuda" },
-            Quest3 = new QuestProperties() {Text = "-"},
-            Quest4 = new QuestProperties() {Text = "-"},
-            Quest5 = new QuestProperties() {Text = "-"},
+            Quest3 = new QuestProperties() {Text = "-", skip = true},
+            Quest4 = new QuestProperties() {Text = "-", skip = true},
+            Quest5 = new QuestProperties() {Text = "-", skip = true},
 
             RewardID = 0,
-            Numquest = 4
+            Numquest = 2
         },
     };
 
@@ -88,6 +89,8 @@ public class MisionClass : MonoBehaviour
         }  
         return null;
     }
+    
+
 }
 
 

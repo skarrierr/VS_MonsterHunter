@@ -28,9 +28,11 @@ public class CanonController : MonoBehaviour
         if (aiming)
         {
             this.transform.rotation = Camera.transform.rotation;
+            manager.CompleteQuest(0, 2);
+
 
         }
-         if (!CanShoot)
+        if (!CanShoot)
          {
              tiempo += Time.deltaTime;
              if (tiempo >= CanonCooldown)
@@ -44,8 +46,10 @@ public class CanonController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && CanShoot && aiming)
         {
             GameObject _canon = Instantiate(CanonBall);
+            manager.CompleteQuest(0, 3);
 
-            
+
+
 
             CanShoot = false;
         }

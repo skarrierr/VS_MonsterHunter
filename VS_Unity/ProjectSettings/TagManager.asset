@@ -11,6 +11,9 @@ TagManager:
   - Bullet
   - Boss
   - BossSpawn
+  - enemy
+  - fish
+  - arrow
   layers:
   - Default
   - TransparentFX

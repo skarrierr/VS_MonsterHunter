@@ -27,13 +27,13 @@ public class ShipController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         manager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-       
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 
     void Update()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+       
         if (Input.GetKeyDown(KeyCode.R))
         {
             CambiarEscena(0);
@@ -75,6 +75,7 @@ public class ShipController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
+            manager.CompleteQuest(0, 0);
             rb.AddForce(transform.TransformDirection(new Vector3(0, 0, Mov * speed * Time.fixedDeltaTime)), ForceMode.Force);
             rb.AddForce(transform.TransformDirection(new Vector3(0, 0, corriente * Time.fixedDeltaTime)), ForceMode.Force);
             if (rb.velocity.magnitude >= Maxspeed)
@@ -92,7 +93,7 @@ public class ShipController : MonoBehaviour
         Mov = Input.GetAxis("Vertical");
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.LeftArrow))
         {
-           
+            manager.CompleteQuest(0, 1);
         }
         
     }

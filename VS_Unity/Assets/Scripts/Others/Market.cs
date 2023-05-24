@@ -27,7 +27,6 @@ public class Market : MonoBehaviour
         SangreText.color = Color.black;
         CarneText.color = Color.black;
         UpdateShop();
-
         SangreText.text = NumSangreInventory + "/" + NeedSangre;
         CarneText.text = NumCarneInventory + "/" + NeedCarne;
     }
@@ -37,24 +36,18 @@ public class Market : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
-           
                 ShopPanel.SetActive(true);
-
-            
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        
-    }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-
             ShopPanel.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             NumCarneInventory = 0;
             NumSangreInventory = 0;
         }
@@ -87,7 +80,7 @@ public class Market : MonoBehaviour
                     tempNeedSangre--;
                 }
             }
-           
+            manager.CompleteQuest(1, 2);
         }
         else
         {
