@@ -36,7 +36,7 @@ public class MobController : MonoBehaviour
     private Quaternion q;
 
 
-    public GameObject LifeBar;
+    public Image LifeBar;
     public GameObject Floater;
     public GameObject LootParticles;
     public Collider LootCollider;
@@ -58,9 +58,14 @@ public class MobController : MonoBehaviour
     
     void Update()
     {
+        if(Life <= 0)
+            target.GetComponent<ShipController>().bossIsDead = true;
 
-        
-                switch (BossState)
+
+        LifeBar.fillAmount = Life / 50;
+
+
+        switch (BossState)
                 {
                     case BossStates.NONE:
                         break;
@@ -110,7 +115,7 @@ public class MobController : MonoBehaviour
         {
 
             ChangeState(BossStates.CHASING);
-            LifeBar.SetActive(true);
+           
         }
 
 
@@ -211,12 +216,12 @@ public class MobController : MonoBehaviour
                 ChangeState(BossStates.DIE);
             }
         }
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && Life<= 0)
         {
-           
             {
                 ChangeState(BossStates.ATTACK);
             }
         }
     }
+    
 }

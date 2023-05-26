@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class ShipController : MonoBehaviour
 {
@@ -15,9 +17,13 @@ public class ShipController : MonoBehaviour
     public GameObject DieText;
     public GameObject mirilla;
     public float ImpactForce;
+    public Text WinText;
     public float corriente;
     
     public bool IsInGarage = false;
+    public bool bossIsDead = false;
+
+    private float tiempo;
 
     public GameObject Floater1;
     public GameObject Floater2;
@@ -33,10 +39,18 @@ public class ShipController : MonoBehaviour
 
     void Update()
     {
-       
+        if (bossIsDead)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            tiempo +=Time.deltaTime;
+            WinText.text = "Has Ganado! ";
+            if (tiempo >= 2)
+                Win() ;
+        }
         if (Input.GetKeyDown(KeyCode.R))
         {
-            CambiarEscena(0);
+            SceneManager.LoadScene("Ocean");
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -100,7 +114,7 @@ public class ShipController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Boss")
+        if (other.gameObject.tag == "Boss" && !bossIsDead)
         {
 
             manager.HealthCasco = manager.HealthCasco - Damage;
@@ -115,7 +129,10 @@ public class ShipController : MonoBehaviour
             }
         }
     }
-
+    public void Win()
+    {
+        SceneManager.LoadScene("GameMenu");
+    }
     public void CambiarEscena(int _id)
     {
         SceneManager.LoadScene(_id);

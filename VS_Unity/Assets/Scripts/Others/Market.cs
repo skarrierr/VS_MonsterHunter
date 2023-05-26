@@ -64,8 +64,8 @@ public class Market : MonoBehaviour
 
         if (NumCarneInventory >= NeedCarne && NumSangreInventory >= NeedSangre)
         {
-            manager.Inventory.Add(3);
-            
+           
+
             for (int i = 0; i < tempInventory.Count; i++)
             {
                 if (manager.Inventory[i] == 1 && tempNeedCarne > 0)
@@ -81,6 +81,7 @@ public class Market : MonoBehaviour
                 }
             }
             manager.CompleteQuest(1, 2);
+            manager.Inventory.Add(3);
         }
         else
         {

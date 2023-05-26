@@ -1,658 +1,380 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1671069640632156, "dur": 883575, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069640633554, "dur": 37364, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069640671173, "dur": 833970, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069641505163, "dur": 10568, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069649490287, "dur": 2251825, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069649490573, "dur": 16005, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069649506581, "dur": 2225787, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069651732370, "dur": 9740, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069651742668, "dur": 18, "ph": "X", "name": "", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122267639098, "dur": 311674, "ph": "X", "name": "Build ScriptAssemblies", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122267640251, "dur": 26620, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122267667105, "dur": 273298, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122267940421, "dur": 10351, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122271512797, "dur": 97278, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122271513002, "dur": 1548, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122271514550, "dur": 82732, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122271597284, "dur": 12790, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122271610485, "dur": 15, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1671069649540869, "dur":1943, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069649542824, "dur":662, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1671069649543513, "dur":21, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1671069649543536, "dur":332, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1671069649543892, "dur":683, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069649544575, "dur":0, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651719953, "dur":158, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720111, "dur":27, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720138, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720141, "dur":48, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720189, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720191, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720197, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720200, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720206, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720208, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720214, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720217, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720223, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720225, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720231, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720234, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720241, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720254, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651720301, "dur":2307, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1671069649544272, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649544591, "dur":9418, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649554016, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":1, "ts":1671069649554139, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649554242, "dur":5, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649556896, "dur":2178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":1, "ts":1671069649559136, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1671069649559266, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649559330, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649559396, "dur":2738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1671069649562258, "dur":545, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1671069649562804, "dur":691, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649563544, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649563647, "dur":81355, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":1, "ts":1671069649645053, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1671069649645162, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649645217, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649645229, "dur":1994, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":1, "ts":1671069649647284, "dur":182, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069649647466, "dur":772, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649648252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649648454, "dur":90363, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069649738871, "dur":145, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069649739016, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649739065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649739087, "dur":82232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069649821390, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069649821626, "dur":4344, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649825988, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069649826017, "dur":213490, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650039573, "dur":277, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650039851, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650039940, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650039955, "dur":33180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650073207, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650073334, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650073432, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650073443, "dur":29598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650103092, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650103225, "dur":510, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650103748, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650103762, "dur":99938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650203762, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650203898, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650203970, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650203982, "dur":54703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650258755, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650258826, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650258931, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650258945, "dur":63479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650322493, "dur":121600, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650444094, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650444187, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650444200, "dur":1891, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650446148, "dur":35058, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650481207, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650481314, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650481326, "dur":2563, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650483945, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650484065, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650484121, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650484130, "dur":81125, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650565316, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650565438, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650565506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650565516, "dur":215002, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650780625, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069650780768, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650780840, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1671069650780855, "dur":622642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":1, "ts":1671069651403584, "dur":316357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649544239, "dur":344, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649544585, "dur":9417, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649554016, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1671069649554018, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649554128, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1671069649554131, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649554194, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649554936, "dur":3495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/app.info" }}
-,{ "pid":12345, "tid":2, "ts":1671069649558435, "dur":117, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1671069649558553, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649558623, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649559275, "dur":2044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1671069649561371, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1671069649561500, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649561556, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649561569, "dur":2999, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":2, "ts":1671069649564652, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1671069649564794, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649564853, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649564865, "dur":81622, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1671069649646720, "dur":176, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649646897, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649646988, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649648431, "dur":21190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649669667, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649669755, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649669794, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649669801, "dur":151531, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649821404, "dur":169, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649821573, "dur":333, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649821923, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649821940, "dur":45285, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649867291, "dur":178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649867469, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649867556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649867568, "dur":62583, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649930221, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649930348, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649930414, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649930425, "dur":55515, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649986005, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069649986145, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649986226, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069649986237, "dur":76045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650062349, "dur":1485, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650063835, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650063930, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650063943, "dur":29468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650093468, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650093609, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650093681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650093741, "dur":74556, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650168349, "dur":106, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650168456, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650168513, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650168523, "dur":104001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650272587, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650272642, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650272716, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650272729, "dur":70608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650343425, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650343606, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650343686, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650343698, "dur":82466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650426241, "dur":47926, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650474168, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650474273, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650474286, "dur":1753, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650476093, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650476230, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650476292, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650476328, "dur":467382, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650943770, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069650943900, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650943966, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069650943977, "dur":69962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069651014009, "dur":156628, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069651170652, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1671069651170670, "dur":2286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":2, "ts":1671069651173026, "dur":546927, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649544614, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649544614, "dur":9478, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649554092, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1671069649554246, "dur":228, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649554478, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649645167, "dur":5418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1671069649650639, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649650768, "dur":2803, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649653585, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649661344, "dur":161262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649822668, "dur":1554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649824224, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649824354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649824370, "dur":41017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649865455, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649865597, "dur":500, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649866106, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649866120, "dur":29629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649895814, "dur":156, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649895971, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649896051, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649896063, "dur":40261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649936391, "dur":272, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069649936663, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649936734, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069649936742, "dur":138550, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650075345, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650075505, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650075611, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650075623, "dur":52493, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650128177, "dur":133, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650128310, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650128381, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650128391, "dur":63968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650192420, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650192567, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650192640, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650192652, "dur":71238, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650263949, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650264006, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650264073, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650264084, "dur":29579, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650293725, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650293779, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650293882, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650293895, "dur":49771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650343722, "dur":98890, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650442612, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650442679, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650442688, "dur":1972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650444715, "dur":3598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650448313, "dur":264, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650448587, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650448599, "dur":2040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650450696, "dur":32869, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650483566, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650483655, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650483667, "dur":1659, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650485382, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650485519, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650485587, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650485598, "dur":163931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650649584, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650649728, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650649800, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650649837, "dur":67808, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650717696, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650717827, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650717893, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650717904, "dur":265649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650983642, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069650983809, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650983893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1671069650983904, "dur":735960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":3, "ts":1671069651719915, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":3, "ts":1671069651719916, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649544498, "dur":107, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649544605, "dur":9448, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649554054, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1671069649554191, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649554256, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649557351, "dur":1598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1671069649559028, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1671069649559161, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649559222, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649559351, "dur":2288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":4, "ts":1671069649561695, "dur":125, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1671069649561821, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649561893, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649563553, "dur":80963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":4, "ts":1671069649644645, "dur":120, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1671069649644766, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649644815, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649644828, "dur":3619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":4, "ts":1671069649648517, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity.exe" }}
-,{ "pid":12345, "tid":4, "ts":1671069649648580, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649648646, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649648652, "dur":207168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity.exe" }}
-,{ "pid":12345, "tid":4, "ts":1671069649855875, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069649855997, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649856130, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649856142, "dur":80190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069649936400, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069649936545, "dur":92, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649936645, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649936656, "dur":61149, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069649997873, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069649998009, "dur":758, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649998784, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069649998800, "dur":81105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650079975, "dur":162, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650080138, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650080230, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650080244, "dur":36035, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650116335, "dur":732, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650117068, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650117164, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650117177, "dur":50883, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650168122, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650168270, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650168334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650168347, "dur":38683, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650207124, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650207281, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650207349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650207360, "dur":30310, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650237730, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650237784, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650237852, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650237864, "dur":67940, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650305882, "dur":648, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650306530, "dur":86, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650306626, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650306638, "dur":37428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650344149, "dur":317998, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650662147, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650662240, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650662251, "dur":1658, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650663970, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650664093, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650664158, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650664171, "dur":121263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650785527, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650785941, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650786021, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650786036, "dur":79499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650865588, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069650865711, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650865771, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069650865781, "dur":170225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":4, "ts":1671069651036061, "dur":163, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":4, "ts":1671069651036225, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651036302, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651037258, "dur":1375, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":4, "ts":1671069651038703, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1671069651038782, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651038850, "dur":1481, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1671069651040382, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1671069651040451, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651040461, "dur":13937, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1671069651054450, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1671069651054506, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651054518, "dur":5056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":4, "ts":1671069651059633, "dur":167, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1671069651059800, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651059863, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651059877, "dur":1551, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":4, "ts":1671069651061484, "dur":1609, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":4, "ts":1671069651063094, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651063206, "dur":9, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651063226, "dur":1376, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":4, "ts":1671069651064660, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1671069651064720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1671069651064731, "dur":117893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":4, "ts":1671069651182674, "dur":537261, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649544382, "dur":215, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649544598, "dur":9496, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649554094, "dur":135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1671069649554230, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649554305, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649645064, "dur":2985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1671069649648108, "dur":977, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649649085, "dur":1199, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649650298, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649650312, "dur":146595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649796955, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649797109, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649797169, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649797176, "dur":44184, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649841487, "dur":232, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649841720, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649841850, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649841863, "dur":30739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649872659, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069649872913, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649872991, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069649873003, "dur":220211, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650093304, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650093538, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650093611, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650093622, "dur":57094, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650150787, "dur":147, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650150935, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650151012, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650151024, "dur":181063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650332148, "dur":123877, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650456026, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650456122, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650456135, "dur":3651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650459844, "dur":1567, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650461412, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650461538, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650461552, "dur":1631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650463241, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650463374, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650463443, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650463455, "dur":137114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650600630, "dur":122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650600753, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650600817, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650600828, "dur":184558, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650785460, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069650785607, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650785708, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069650785722, "dur":291661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":5, "ts":1671069651077456, "dur":127, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1671069651077595, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1671069651077622, "dur":54511, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/resources.assets" }}
-,{ "pid":12345, "tid":5, "ts":1671069651132199, "dur":587737, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649544731, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649544731, "dur":9362, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649554093, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1671069649554230, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649554291, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649562742, "dur":82396, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1671069649645200, "dur":115, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1671069649645316, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649645367, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649645376, "dur":5257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":6, "ts":1671069649650686, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649650773, "dur":2809, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649653593, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649661319, "dur":158340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649819745, "dur":130, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649819875, "dur":98, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649819982, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649819994, "dur":51004, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649871069, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649871241, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649871321, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649871335, "dur":63926, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649935324, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649935455, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649935521, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069649935535, "dur":64334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069649999927, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650000081, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650000149, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650000173, "dur":54598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650054842, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650054995, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650055097, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650055110, "dur":39263, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650094430, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650094567, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650094629, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650094640, "dur":31114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650125814, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650125945, "dur":174, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650126126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650126136, "dur":39668, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650165866, "dur":157, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650166023, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650166094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650166104, "dur":44295, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650210460, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650210592, "dur":653, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650211256, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650211308, "dur":165759, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650377125, "dur":1748, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650378874, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650378972, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650378983, "dur":1225, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650380262, "dur":62207, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650442470, "dur":106, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650442590, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650442604, "dur":1582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650444241, "dur":2971, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650447213, "dur":111, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650447336, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650447389, "dur":1949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650449397, "dur":1746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650451143, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650451224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650451235, "dur":1361, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650452653, "dur":1697, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650454351, "dur":187, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650454554, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650454566, "dur":1589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650456212, "dur":1955, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650458168, "dur":155, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650458364, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650458376, "dur":1589, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650460019, "dur":199760, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650659779, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650659870, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650659881, "dur":1273, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650661207, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650661324, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650661384, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650661394, "dur":199092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650860578, "dur":4910, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069650865489, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650865578, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1671069650865592, "dur":456422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":6, "ts":1671069651322133, "dur":397831, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649544860, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649544860, "dur":9231, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649554092, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1671069649554246, "dur":156, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649554409, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649644732, "dur":5843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":7, "ts":1671069649650633, "dur":170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":7, "ts":1671069649650803, "dur":2791, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649653633, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649661328, "dur":105893, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":7, "ts":1671069649767260, "dur":109, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069649767370, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649767412, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649767420, "dur":52235, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069649819755, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069649819894, "dur":96, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649819998, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649820006, "dur":35513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069649855603, "dur":150, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069649855754, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649855859, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069649855871, "dur":34008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069649889942, "dur":211950, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650101894, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650102024, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650102037, "dur":3562, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650105660, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650105900, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650106009, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650106021, "dur":53217, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650159297, "dur":144, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650159441, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650159532, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650159556, "dur":38521, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650198136, "dur":154, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650198291, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650198362, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650198374, "dur":44092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650242525, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650242667, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650242751, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650242763, "dur":45695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650288517, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650288611, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650288698, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650288709, "dur":231877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650520645, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650520778, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650520843, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650520854, "dur":302744, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650823653, "dur":140, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069650823794, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650823867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069650823880, "dur":186888, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069651010863, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069651011073, "dur":80, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069651011161, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1671069651011172, "dur":481750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":7, "ts":1671069651492982, "dur":226981, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649544995, "dur":0, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649544996, "dur":9057, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649554053, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1671069649554189, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649554268, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649563264, "dur":81067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":8, "ts":1671069649644401, "dur":250, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1671069649644652, "dur":95, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649644758, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649644770, "dur":3320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":8, "ts":1671069649648143, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":8, "ts":1671069649648303, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649648393, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649648404, "dur":13456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":8, "ts":1671069649661918, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069649662077, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649662143, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649662190, "dur":164783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069649827043, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069649827229, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649827310, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649827325, "dur":36126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069649863518, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069649863680, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649863756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069649863771, "dur":136453, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650000283, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650000403, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650000466, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650000478, "dur":61878, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650062417, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650062618, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650062698, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650062711, "dur":56261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650119033, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650119186, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650119251, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650119290, "dur":45842, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650165202, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650165354, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650165420, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650165431, "dur":47203, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650212744, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650212799, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650212863, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650212874, "dur":46015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650258979, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650259046, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650259114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650259125, "dur":52981, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650312165, "dur":72936, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650385101, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650385203, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650385214, "dur":3522, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650388790, "dur":33645, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650422437, "dur":97, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650422546, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650422561, "dur":3863, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650426477, "dur":5564, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650432042, "dur":145, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650432565, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650432580, "dur":2127, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650434765, "dur":73968, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650508734, "dur":79, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650508823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650508834, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650510592, "dur":141, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650510734, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650510844, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650510855, "dur":318829, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650829742, "dur":119, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069650829861, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650829961, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069650829972, "dur":254788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":8, "ts":1671069651084869, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/level0.resS" }}
-,{ "pid":12345, "tid":8, "ts":1671069651084939, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069651084953, "dur":2599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/level0.resS" }}
-,{ "pid":12345, "tid":8, "ts":1671069651087621, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/level0" }}
-,{ "pid":12345, "tid":8, "ts":1671069651087682, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069651087698, "dur":2358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/level0" }}
-,{ "pid":12345, "tid":8, "ts":1671069651090206, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1671069651090278, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069651090295, "dur":2643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":8, "ts":1671069651093001, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":8, "ts":1671069651093094, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069651093108, "dur":1814, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":8, "ts":1671069651094995, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/boot.config" }}
-,{ "pid":12345, "tid":8, "ts":1671069651095187, "dur":85, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069651095284, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1671069651095302, "dur":1870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/Desktop/VIOD-Reyes_David-VS_Unity-OCEANHUNTER/EJECUTABLE/VS_Unity_Data/boot.config" }}
-,{ "pid":12345, "tid":8, "ts":1671069651097256, "dur":622695, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1671069651724643, "dur":2546, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1671069651742762, "dur": 866, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1671069651742656, "dur": 991, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1685122271539262, "dur":1214, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271540486, "dur":108, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1685122271540611, "dur":17, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1685122271540629, "dur":193, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1685122271540842, "dur":549, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271541391, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590715, "dur":135, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590850, "dur":63, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590913, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590919, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590927, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590929, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590935, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590936, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590942, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590943, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590949, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590951, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590957, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590972, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271590992, "dur":1483, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1685122271541073, "dur":324, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271541400, "dur":4923, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546332, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546333, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546377, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546378, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546422, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546462, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546539, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546585, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546674, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546720, "dur":157, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546877, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546933, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271546976, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547045, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547086, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547126, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547164, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547210, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547246, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547290, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547331, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547383, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547417, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547453, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547486, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547524, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547561, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547616, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547657, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547699, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547738, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547778, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547817, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547889, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547936, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271547969, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271548000, "dur":4519, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271552519, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271552554, "dur":2952, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271555508, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271555573, "dur":2682, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271558256, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271558334, "dur":1833, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":1, "ts":1685122271560167, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271560212, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":1, "ts":1685122271560315, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271560347, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1685122271560413, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271560985, "dur":2403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":1, "ts":1685122271563426, "dur":1134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1685122271564560, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271564608, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1685122271564659, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271564662, "dur":2729, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level1" }}
+,{ "pid":12345, "tid":1, "ts":1685122271567422, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685122271567458, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1685122271567461, "dur":1750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":1, "ts":1685122271569240, "dur":21471, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271541100, "dur":302, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271541403, "dur":4929, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546332, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546443, "dur":89, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546533, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546587, "dur":70, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546658, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546709, "dur":137, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546846, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546938, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271546981, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547044, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547079, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547119, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547159, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547196, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547236, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547281, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547316, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547348, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547390, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547428, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547463, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547504, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547540, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547578, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547619, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547661, "dur":231, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547892, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547945, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271547997, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271548046, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271548080, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271548125, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271548157, "dur":4195, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271552353, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271552420, "dur":3401, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271555822, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271555858, "dur":4362, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":2, "ts":1685122271560220, "dur":164, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271560385, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685122271560418, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271561219, "dur":2311, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685122271563579, "dur":980, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1685122271564559, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271564608, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685122271564658, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271564662, "dur":1288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level1.resS" }}
+,{ "pid":12345, "tid":2, "ts":1685122271565976, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1685122271566008, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271566011, "dur":1516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1685122271567555, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1685122271567589, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1685122271567592, "dur":1606, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1685122271569230, "dur":21479, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271541140, "dur":266, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271541407, "dur":4921, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546332, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546441, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546482, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546529, "dur":116, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546646, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546693, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546792, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546856, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546920, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271546980, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547035, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547076, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547113, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547151, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547192, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547239, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547279, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547316, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547349, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547395, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547429, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547467, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547507, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547542, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547578, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547613, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547653, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547694, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547733, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547769, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547801, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547881, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547929, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271547966, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271548000, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271548053, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271548086, "dur":4044, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271552131, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271552211, "dur":3340, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271555553, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271555622, "dur":2631, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271558253, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271558305, "dur":2812, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":3, "ts":1685122271561118, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271561164, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1685122271561204, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271561214, "dur":2715, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":3, "ts":1685122271563965, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1685122271564002, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1685122271564060, "dur":18690, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/resources.assets" }}
+,{ "pid":12345, "tid":3, "ts":1685122271582784, "dur":7935, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271541165, "dur":247, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271541412, "dur":4918, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546333, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546396, "dur":135, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546532, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546594, "dur":82, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546676, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546721, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546758, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546800, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546845, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity.exe" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546884, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546926, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271546973, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547011, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547051, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547096, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547136, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547174, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547213, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547249, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547292, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547332, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547396, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547433, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547479, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547532, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547569, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547619, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547661, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547703, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547739, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547773, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547812, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547887, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547942, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271547985, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271548028, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271548065, "dur":4381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271552446, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271552499, "dur":3178, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271555678, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271555720, "dur":2554, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271558275, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271558330, "dur":2692, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1685122271561023, "dur":74, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271561099, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1685122271561141, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271561157, "dur":4615, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1685122271565807, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1685122271565840, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271565843, "dur":1984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/level0.resS" }}
+,{ "pid":12345, "tid":4, "ts":1685122271567859, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1685122271567964, "dur":31, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1685122271567996, "dur":22714, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271541199, "dur":216, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271541415, "dur":4924, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546340, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546427, "dur":105, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546533, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546582, "dur":76, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546658, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546711, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546812, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546874, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546917, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546954, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271546991, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547047, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547093, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547130, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547165, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547204, "dur":39, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547244, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547289, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547331, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547400, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547436, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547482, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547520, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547562, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547609, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547651, "dur":37, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547688, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547725, "dur":33, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547759, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547792, "dur":32, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547824, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547892, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547943, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271547990, "dur":34, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271548025, "dur":4420, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271552445, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271552508, "dur":3135, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271555643, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271555688, "dur":2598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271558287, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271558335, "dur":3443, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1685122271561779, "dur":40, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271561820, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1685122271561858, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271561861, "dur":1771, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":5, "ts":1685122271563679, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1685122271563720, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1685122271563726, "dur":26934, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1685122271590693, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":5, "ts":1685122271590695, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271541227, "dur":191, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271541418, "dur":4917, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546337, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546403, "dur":150, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546554, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546606, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546740, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546782, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546821, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546876, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546925, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271546979, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271547028, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271547068, "dur":36, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271547105, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271547146, "dur":43, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271547190, "dur":5359, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271552549, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271552596, "dur":5997, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558593, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558638, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558673, "dur":28, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558701, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558731, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558757, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558792, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558819, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558849, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558875, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558901, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558925, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558952, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271558976, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559004, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559028, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559054, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559077, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559105, "dur":25, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559130, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559156, "dur":27, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559183, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559212, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559236, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559262, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559286, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559312, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559338, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559364, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559388, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559415, "dur":24, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559439, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559464, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559488, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559514, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559538, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559566, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559589, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559614, "dur":29, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559643, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559669, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559693, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559717, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559740, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559766, "dur":23, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271559789, "dur":8294, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271568121, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1685122271568208, "dur":1297, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/david/OneDrive/Escritorio/dadsad/VS_Unity_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":6, "ts":1685122271569535, "dur":21180, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1685122271593705, "dur":1286, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1685122271610609, "dur": 419, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1685122271610475, "dur": 567, "ph": "X", "name": "Write chrome-trace events", "args": {} },

@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     public GameObject misionPanel;
 
     public Text MisionTitle;
+    public Image LifeBar;
     
     public Text Quest1;
     public Text Quest2;
@@ -66,7 +67,7 @@ public class GameManager : MonoBehaviour
         
         UpdateMisionUI();
         
-       
+       UpdateUI();
     
         if(MisionID == 1)
         {
@@ -177,5 +178,9 @@ public class GameManager : MonoBehaviour
         Quest5.fontStyle=FontStyle.Normal;
         Quest5.color = Color.gray;
 
+    }
+    public void UpdateUI()
+    {
+        LifeBar.fillAmount = HealthCasco / 60;
     }
 }

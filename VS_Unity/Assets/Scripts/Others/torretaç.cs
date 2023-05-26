@@ -10,6 +10,7 @@ public class torretaç : MonoBehaviour
     public float velocidadRotacion = 5f; // Velocidad de rotación de la torreta
     public float shootForce;
     private float tiempo;
+    private float dist;
     public float howClose;
     public List<GameObject> objetivos = new List<GameObject>();
     public float fireRate;
@@ -22,15 +23,23 @@ public class torretaç : MonoBehaviour
     void Update()
     {
         //Apuntar hacia el objetivo
-        SelectEnemy();
+        if (Input.GetKeyDown(KeyCode.Tab))
+            SelectEnemy();
+
         if (objetivo != null) {
             Vector3 direccion = objetivo.transform.position - transform.position;
             Quaternion rotacion = Quaternion.LookRotation(direccion);
             transform.rotation = Quaternion.Lerp(transform.rotation, rotacion, velocidadRotacion * Time.deltaTime);
             if (tiempo >= fireRate)
             {
-                if(objetivo.GetComponent<EnemyController>().Life>=0)
+                if (objetivo.GetComponent<EnemyController>().Life > 0 || objetivo.GetComponent<MobController>().Life > 0)
+                {
                     Disparar();
+                }
+                else
+                {
+                    SelectEnemy();
+                }
                 tiempo = 0;
             }
             tiempo += Time.deltaTime;
@@ -47,16 +56,15 @@ public class torretaç : MonoBehaviour
     }
     void SelectEnemy()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
+        
             for (int i = 0; i < objetivos.Count; i++)
             {
-                
-                float dist = Vector3.Distance(objetivos[i].transform.position, transform.position);
+                if (objetivos[i]!=null)
+                     dist = Vector3.Distance(objetivos[i].transform.position, transform.position);
 
                 if (objetivos[i] != objetivo && dist <= howClose)
                 {
-                    print(objetivos[i].GetComponent<EnemyController>().Life);
+                    
                     if (objetivos[i].GetComponent<EnemyController>().Life > 0)
                     {
                         objetivo = objetivos[i];
@@ -64,7 +72,7 @@ public class torretaç : MonoBehaviour
                     }
                 }
             }
-        }
     }
+    
 }
 
